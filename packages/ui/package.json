@@ -13,10 +13,12 @@
     "@tamagui/animations-react-native": "2.0.0-rc.17",
     "@tamagui/config": "2.0.0-rc.17",
     "@tamagui/core": "2.0.0-rc.17",
+    "@tamagui/lucide-icons": "2.0.0-rc.17",
     "@tamagui/native": "2.0.0-rc.17",
     "@tamagui/next-theme": "2.0.0-rc.17",
     "@tamagui/static": "2.0.0-rc.17",
     "@tamagui/theme-builder": "2.0.0-rc.17",
+    "@tamagui/toast": "2.0.0-rc.17",
     "tamagui": "2.0.0-rc.17"
   },
   "peerDependencies": {

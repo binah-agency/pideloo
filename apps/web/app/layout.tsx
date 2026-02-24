@@ -2,6 +2,9 @@ import { Metadata, Viewport } from 'next'
 import { Provider } from '@pideloo/ui'
 import TamaguiRegistry from './TamaguiRegistry'
 
+if (process.env.NODE_ENV === 'production') {
+  require('../public/tamagui.css')
+}
 // 1. SEO: Configuración de metadatos estáticos
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),

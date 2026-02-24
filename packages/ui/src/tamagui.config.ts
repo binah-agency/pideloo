@@ -5,12 +5,19 @@ import { createTamagui } from 'tamagui'
 import { themes } from './themes'
 import { tokens } from './tokens'
 import { shorthands } from './shorthands'
+import { interfonts } from './fonts'
+import { mediaQueries } from './mediaQueries'
 
 export const tamaguiConfig = createTamagui({
   ...config,
   themes,
   tokens,
-  shorthands
+  shorthands,
+  fonts: {
+    body: interfonts,
+  },
+  mediaQueries,
+  
 })
 
 export default tamaguiConfig
