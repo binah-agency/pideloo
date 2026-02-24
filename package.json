@@ -1,0 +1,39 @@
+{
+  "name": "pideloo-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Pideloo - D2C Commerce Platform with Income Generation",
+  "scripts": {
+    "build:ui": "pnpm --filter=@pideloo/ui build",
+    "ui:check": "tamagui check",
+    "ui:build": "tamagui generate",
+    "build": "turbo run build",
+    "dev": "pnpm build:ui &&turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "db:types": "supabase gen types typescript --project-id $SUPABASE_PROJECT_ID > packages/types/src/database.types.ts",
+    "mobile": "pnpm --filter=@pideloo/mobile dev",
+    "api": "pnpm --filter=@pideloo/api dev",
+    "web": "pnpm --filter=@pideloo/web dev",
+    "landing": "pnpm --filter=@pideloo/landing dev"
+  },
+  "devDependencies": {
+    "@tamagui/cli": "2.0.0-rc.17",
+    "@tamagui/theme-builder": "2.0.0-rc.17",
+    "turbo": "^1.11.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "pnpm": {
+  "overrides": {
+    "tamagui": "2.0.0-rc.17",
+    "@tamagui/core": "2.0.0-rc.17",
+    "@tamagui/static": "2.0.0-rc.17"
+  }
+},
+  "packageManager": "pnpm@10.30.1+sha512.3590e550d5384caa39bd5c7c739f72270234b2f6059e13018f975c313b1eb9fefcc09714048765d4d9efe961382c312e624572c0420762bdc5d5940cdf9be73a"
+}

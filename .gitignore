@@ -1,0 +1,66 @@
+# Dependencies
+node_modules
+.pnpm-store
+.yarn
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist
+build
+.next
+web-build
+*.tsbuildinfo
+.turbo
+
+# Environment
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Supabase
+.supabase
+supabase/.temp
+supabase/seed.sql
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Testing
+coverage
+.nyc_output
+
+# Misc
+.cache
+.temp
+tmp
+*.pid
+*.seed
+*.pid.lock
+
+# Mobile
+apps/mobile/.expo
+apps/mobile/ios
+apps/mobile/android
+apps/mobile/*.ipa
+apps/mobile/*.apk
+
+# Keep these
+!.gitkeep
